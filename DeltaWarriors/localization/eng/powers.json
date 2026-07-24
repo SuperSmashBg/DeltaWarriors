@@ -1,6 +1,6 @@
 {
-  "DELTAWARRIORS-COMMAND_POWER.description": "Automatically draw and play cards when you end turn",
-  "DELTAWARRIORS-COMMAND_POWER.smartDescription": "{OwnerName} will draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn",
+  "DELTAWARRIORS-COMMAND_POWER.description": "Automatically draw and play cards when you end turn.",
+  "DELTAWARRIORS-COMMAND_POWER.smartDescription": "{OwnerName} will draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn.",
   "DELTAWARRIORS-COMMAND_POWER.title": "Command",
 
   "DELTAWARRIORS-TEMP_COMMAND_POWER.description": "Gain {Amount} Command this turn",
@@ -18,7 +18,6 @@
   "DELTAWARRIORS-MOSSY_SHACKLES_POWER.smartDescription": "Gain {Amount} block whenever you play a card automatically",
   "DELTAWARRIORS-MOSSY_SHACKLES_POWER.title": "Mossy Shackles",
   
-
   "DELTAWARRIORS-VESSELS_PURPOSE_POWER.description": "Before each turn Scry {Amount}",
   "DELTAWARRIORS-VESSELS_PURPOSE_POWER.smartDescription": "Before each turn Scry {Amount}",
   "DELTAWARRIORS-VESSELS_PURPOSE_POWER.title": "Vessel's Purpose",
@@ -51,9 +50,9 @@
   "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.smartDescription": "Deal {Amount} Damage to a random enemy whenever you shuffle your deck",
   "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.title": "Haunting Memories",
 
-  "DELTAWARRIORS-OTHERWORLDLY_CORRUPTION_POWER.description": "Takes {Amount} more damage from automatic attacks",
-  "DELTAWARRIORS-OTHERWORLDLY_CORRUPTION_POWER.smartDescription": "Takes {Amount} more damage from automatic attacks",
-  "DELTAWARRIORS-OTHERWORLDLY_CORRUPTION_POWER.title": "Otherworldly Corruption",
+  "DELTAWARRIORS-DIMINISH_POWER.description": "Target take additional damage from automatically played attacks.",
+  "DELTAWARRIORS-DIMINISH_POWER.smartDescription": "Takes [blue]{Amount}[/blue] more damage from automatically played attacks.",
+  "DELTAWARRIORS-DIMINISH_POWER.title": "Diminished",
 
   "DELTAWARRIORS-AS_ONE_POWER.description": "If {Cards} Cards were played automatically this turn, Draw {Amount} Cards and Gain {Amount:energyIcons()} next turn",
   "DELTAWARRIORS-AS_ONE_POWER.smartDescription": "If {Cards} Cards were played automatically this turn, Draw {Amount} Cards and Gain {Amount:energyIcons()} next turn",

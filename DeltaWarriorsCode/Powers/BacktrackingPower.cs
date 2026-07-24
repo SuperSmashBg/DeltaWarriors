@@ -17,7 +17,7 @@ public class BacktrackingPower() : DeltaWarriorsPower
         PowerStackType.Counter;
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        [HoverTipFactory.FromPower<OtherworldlyCorruptionPower>()];
+        [HoverTipFactory.FromPower<DiminishPower>()];
     
     public override async Task AfterSideTurnStart(
         CombatSide side,
@@ -26,6 +26,6 @@ public class BacktrackingPower() : DeltaWarriorsPower
     {
         if (!participants.Contains(Owner)) return;
         Flash();
-        await PowerCmd.Apply<OtherworldlyCorruptionPower>(new ThrowingPlayerChoiceContext(), CombatState.HittableEnemies, Amount, Owner, null);
+        await PowerCmd.Apply<DiminishPower>(new ThrowingPlayerChoiceContext(), CombatState.HittableEnemies, Amount, Owner, null);
     }
 }

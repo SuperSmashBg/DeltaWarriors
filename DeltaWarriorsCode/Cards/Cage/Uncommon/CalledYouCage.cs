@@ -29,7 +29,7 @@ public class CalledYouCage() : CageCard(1,
         if (CombatState == null) return;
         foreach (Creature foe in CombatState.Enemies.ToList())
         {
-            Decimal stacks = foe.GetPowerAmount<OtherworldlyCorruptionPower>();
+            Decimal stacks = foe.GetPowerAmount<DiminishPower>();
             if (stacks > 0)
                 await CreatureCmd.Damage(choiceContext, foe, stacks * DynamicVars[Mult].BaseValue, ValueProp.Unpowered, this, play);
         }

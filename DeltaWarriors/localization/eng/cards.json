@@ -1,14 +1,14 @@
 {
-  "DELTAWARRIORS-STRIKE_CAGE.description": "Deal {Damage:diff()} damage",
+  "DELTAWARRIORS-STRIKE_CAGE.description": "Deal {Damage:diff()} damage.",
   "DELTAWARRIORS-STRIKE_CAGE.title": "Strike",
 
-  "DELTAWARRIORS-ACT_CAGE.description": "[gold]Command[/gold] {dwTempCommand:diff()} this turn",
+  "DELTAWARRIORS-ACT_CAGE.description": "[gold]Command[/gold] {TempActCardPower:diff()} this turn.",
   "DELTAWARRIORS-ACT_CAGE.title": "ACT",
 
-  "DELTAWARRIORS-IMMERSE_CAGE.description": "[gold]Scry[/gold] {dwScry:diff()}.\nApply {OtherworldlyCorruptionPower:diff()} [gold]Otherworldly Corruption[/gold]",
-  "DELTAWARRIORS-IMMERSE_CAGE.title": "Immersion",
+  "DELTAWARRIORS-IMMERSE_CAGE.description": "[gold]Scry[/gold] {Scry:diff()}.\n[gold]Diminish[/gold] {DiminishPower:diff()}.",
+  "DELTAWARRIORS-IMMERSE_CAGE.title": "Immerse",
 
-  "DELTAWARRIORS-DEFEND_CAGE.description": "[gold]Block[/gold] {Block:diff()}",
+  "DELTAWARRIORS-DEFEND_CAGE.description": "[gold]Block[/gold] {Block:diff()}.",
   "DELTAWARRIORS-DEFEND_CAGE.title": "Defend",
 
   "DELTAWARRIORS-THROW_CAGE.description": "Deal {Damage:diff()} damage. [gold]Command[/gold] {dwTempCommand:diff()} this turn",
@@ -63,10 +63,10 @@
   "DELTAWARRIORS-PLOT_CAGE.description": "Draw {Cards} cards. They are free this turn.",
   "DELTAWARRIORS-PLOT_CAGE.title": "Plot",
 
-  "DELTAWARRIORS-X_ACTION_CAGE.description": "[gold]Command[/gold] {dwTempCommand:diff()} this turn.",
+  "DELTAWARRIORS-X_ACTION_CAGE.description": "[gold]Command[/gold] {TempXActionPower:diff()} this turn.",
   "DELTAWARRIORS-X_ACTION_CAGE.title": "X-Action",
 
-  "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.description": "[gold]Scry[/gold] {Scry:diff()} at the start of each turn",
+  "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.description": "At the start of your turn [gold]Scry[/gold] {Scry:diff()}",
   "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.title": "Vessel's Purpose",
 
   "DELTAWARRIORS-PROCEED_CAGE.description": "Gain {Energy:energyIcons()}\n[gold]Command[/gold] has no effect for {NoCommandPower:diff()} turn",

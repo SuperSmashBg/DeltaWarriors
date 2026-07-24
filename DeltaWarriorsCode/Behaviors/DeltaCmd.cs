@@ -1,5 +1,7 @@
+using DeltaWarriors.DeltaWarriorsCode.Powers;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Behaviors;
@@ -15,9 +17,9 @@ public static class DeltaCmd
         List<CardModel> selection = cards.Where(c => !c.EnergyCost.CostsX 
                                                      && !c.Keywords.Contains(CardKeyword.Unplayable)
                                                      && c.EnergyCost.GetResolved() > 0).ToList();
-        if (!selection.Any()) selection = cards.Where(c => !c.EnergyCost.CostsX 
-                                                           && !c.Keywords.Contains(CardKeyword.Unplayable)).ToList();
-        if (!selection.Any()) selection = cards.Where(c => !c.EnergyCost.CostsX).ToList();
+        if (selection.Count == 0) selection = cards.Where(c => !c.EnergyCost.CostsX 
+                                                               && !c.Keywords.Contains(CardKeyword.Unplayable)).ToList();
+        if (selection.Count == 0) selection = cards.Where(c => !c.EnergyCost.CostsX).ToList();
         return player.RunState.Rng.CombatCardSelection.NextItem(selection);
     }
 
@@ -34,7 +36,7 @@ public static class DeltaCmd
     {
         List<CardModel> selection = cards.Where(c => !c.EnergyCost.CostsX 
                                                            && !c.Keywords.Contains(CardKeyword.Unplayable)).ToList();
-        if (!selection.Any()) selection = cards.Where(c => !c.EnergyCost.CostsX).ToList();
+        if (selection.Count == 0) selection = cards.Where(c => !c.EnergyCost.CostsX).ToList();
         return player.RunState.Rng.CombatCardSelection.NextItem(selection);
     }
 

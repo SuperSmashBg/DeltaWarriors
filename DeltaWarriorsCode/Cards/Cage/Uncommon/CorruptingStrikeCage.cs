@@ -16,7 +16,7 @@ public class CorruptingStrikeCage() : CageCard(1,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => 
-        [new DamageVar(9, ValueProp.Move), new PowerVar<OtherworldlyCorruptionPower>( 7)];
+        [new DamageVar(9, ValueProp.Move), new PowerVar<DiminishPower>( 7)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand)];
 
@@ -28,13 +28,13 @@ public class CorruptingStrikeCage() : CageCard(1,
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         if (play.Target != null)
-            await CommonActions.Apply<OtherworldlyCorruptionPower>(choiceContext, play.Target, this,
-                DynamicVars.Power<OtherworldlyCorruptionPower>().BaseValue);
+            await CommonActions.Apply<DiminishPower>(choiceContext, play.Target, this,
+                DynamicVars.Power<DiminishPower>().BaseValue);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2);
-        DynamicVars.Power<OtherworldlyCorruptionPower>().UpgradeValueBy(1);
+        DynamicVars.Power<DiminishPower>().UpgradeValueBy(1);
     }
 }

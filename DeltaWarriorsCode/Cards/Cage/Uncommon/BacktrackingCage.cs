@@ -17,7 +17,7 @@ public class BacktrackingCage() : CageCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DeltaPowerVar<BacktrackingPower>(2)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower<OtherworldlyCorruptionPower>(DynamicVars.Power<BacktrackingPower>().IntValue),
+        HoverTipFactory.FromPower<DiminishPower>(DynamicVars.Power<BacktrackingPower>().IntValue),
         HoverTipFactory.Static(DeltaEnums.ToExpand)
     ];
 

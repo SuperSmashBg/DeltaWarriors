@@ -7,8 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Powers;
 
- 
-public class OtherworldlyCorruptionPower() : DeltaWarriorsPower
+public class DiminishPower() : DeltaWarriorsPower
 {
     public override PowerType Type =>
         PowerType.Debuff;
@@ -21,11 +20,11 @@ public class OtherworldlyCorruptionPower() : DeltaWarriorsPower
     {
         if (target != Owner || !props.IsPoweredAttack()) 
             return base.ModifyDamageAdditive(target, amount, props, dealer, cardSource, cardPlay);
-        MainFile.Logger.Info("[OtherworldlyCorruptionPower] Cardplay attached: " + cardPlay);
+        MainFile.Logger.Info($"[{nameof(DiminishPower)}] Cardplay attached: {cardPlay}");
         if (cardPlay is not { IsAutoPlay: true }) 
             return base.ModifyDamageAdditive(target, amount, props, dealer, cardSource, cardPlay);
         Flash();
-        MainFile.Logger.Info("[OtherworldlyCorruptionPower] Add Damage Hook called on: " + target.Name);
+        MainFile.Logger.Info($"[{nameof(DiminishPower)}] Add Damage Hook called on: {target.Name}");
         return base.ModifyDamageAdditive(target, amount, props, dealer, cardSource, cardPlay) + Amount;
     }
 }
