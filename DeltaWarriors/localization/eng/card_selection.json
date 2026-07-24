@@ -1,0 +1,4 @@
+{
+  "TO_SCRY": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to [gold]Discard[/gold].",
+  "TO_MOVE_DRAW_BOTTOM": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to move to the bottom of your [gold]Draw[/gold] pile."
+}

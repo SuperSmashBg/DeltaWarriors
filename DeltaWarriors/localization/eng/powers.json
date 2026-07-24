@@ -1,0 +1,105 @@
+{
+  "DELTAWARRIORS-COMMAND_POWER.description": "Draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn",
+  "DELTAWARRIORS-COMMAND_POWER.smartDescription": "Draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn",
+  "DELTAWARRIORS-COMMAND_POWER.title": "Command",
+
+  "DELTAWARRIORS-TEMP_COMMAND_POWER.description": "Gain {Amount} Command this turn",
+  "DELTAWARRIORS-TEMP_COMMAND_POWER.smartDescription": "Gain {Amount} Command this turn",
+
+  "DELTAWARRIORS-TEMP_PRANKED_CARD_POWER.description": "Loose {Amount} Strength this turn",
+  "DELTAWARRIORS-TEMP_PRANKED_CARD_POWER.smartDescription": "Loose {Amount} Strength this turn",
+  "DELTAWARRIORS-TEMP_PRANKED_CARD_POWER.title": "Pranked",
+
+  "DELTAWARRIORS-ROARING_ENERGY_POWER.description": "At the start of each turn, gain {Amount} less energy",
+  "DELTAWARRIORS-ROARING_ENERGY_POWER.smartDescription": "At the start of each turn, gain {Amount} less energy",
+  "DELTAWARRIORS-ROARING_ENERGY_POWER.title": "Roaring Darkness",
+
+  "DELTAWARRIORS-MOSSY_SHACKLES_POWER.description": "Gain {Amount} block whenever you play a card automatically",
+  "DELTAWARRIORS-MOSSY_SHACKLES_POWER.smartDescription": "Gain {Amount} block whenever you play a card automatically",
+  "DELTAWARRIORS-MOSSY_SHACKLES_POWER.title": "Mossy Shackles",
+  
+
+  "DELTAWARRIORS-VESSELS_PURPOSE_POWER.description": "Before each turn Scry {Amount}",
+  "DELTAWARRIORS-VESSELS_PURPOSE_POWER.smartDescription": "Before each turn Scry {Amount}",
+  "DELTAWARRIORS-VESSELS_PURPOSE_POWER.title": "Vessel's Purpose",
+
+  "DELTAWARRIORS-NO_COMMAND_POWER.description": "Command has no effect {Amount:plural:this turn|the next [blue]{}[/blue] turns}",
+  "DELTAWARRIORS-NO_COMMAND_POWER.smartDescription": "Command has no effect {Amount:plural:this turn|the next [blue]{}[/blue] turns}",
+  "DELTAWARRIORS-NO_COMMAND_POWER.title": "No Command",
+
+  "DELTAWARRIORS-DRAW_LESS_NEXT_TURN.description": "Draw {Amount} fewer {Amount:plural:card|cards} next turn",
+  "DELTAWARRIORS-DRAW_LESS_NEXT_TURN.smartDescription": "Draw {Amount} fewer {Amount:plural:card|cards} next turn",
+  "DELTAWARRIORS-DRAW_LESS_NEXT_TURN.title": "Draw less next turn",
+
+  "DELTAWARRIORS-DISTORTED_REFLECTION_POWER.description": "Deal {Amount} to ALL enemies when you play a card with a modified cost",
+  "DELTAWARRIORS-DISTORTED_REFLECTION_POWER.smartDescription": "Deal {Amount} to ALL enemies when you play a card with a modified cost",
+  "DELTAWARRIORS-DISTORTED_REFLECTION_POWER.title": "Distorted Reflection",
+
+  "DELTAWARRIORS-NO_DAMAGE_POWER.description": "{OwnerName} cannot cause the enemy to loose HP for {Amount:plural:{} turn|{} turns}",
+  "DELTAWARRIORS-NO_DAMAGE_POWER.smartDescription": "{OwnerName} cannot cause the enemy to loose HP for {Amount:plural:{} turn|{} turns}",
+  "DELTAWARRIORS-NO_DAMAGE_POWER.title": "No Damage",
+
+  "DELTAWARRIORS-MERCIFUL_POWER.description": "You receive [blue]50%[/blue] less damage from enemies this turn.",
+  "DELTAWARRIORS-MERCIFUL_POWER.smartDescription": "You receive [blue]{DamageDecrease:percentLess()}%[/blue] less damage from enemies",
+  "DELTAWARRIORS-MERCIFUL_POWER.title": "Merciful",
+
+  "DELTAWARRIORS-STORAGE_POWER.description": "Cards drawn [gold]Automatically[/gold] retain for a turn.",
+  "DELTAWARRIORS-STORAGE_POWER.smartDescription": "Cards drawn [gold]Automatically[/gold] retain for a turn.",
+  "DELTAWARRIORS-STORAGE_POWER.title": "Storage",
+
+  "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.description": "Deal {Amount} Damage to a random enemy whenever you shuffle your deck",
+  "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.smartDescription": "Deal {Amount} Damage to a random enemy whenever you shuffle your deck",
+  "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.title": "Haunting Memories",
+
+  "DELTAWARRIORS-OTHERWORLDLY_CORRUPTION_POWER.description": "Takes {Amount} more damage from automatic attacks",
+  "DELTAWARRIORS-OTHERWORLDLY_CORRUPTION_POWER.smartDescription": "Takes {Amount} more damage from automatic attacks",
+  "DELTAWARRIORS-OTHERWORLDLY_CORRUPTION_POWER.title": "Otherworldly Corruption",
+
+  "DELTAWARRIORS-AS_ONE_POWER.description": "If {Cards} Cards were played automatically this turn, Draw {Amount} Cards and Gain {Amount:energyIcons()} next turn",
+  "DELTAWARRIORS-AS_ONE_POWER.smartDescription": "If {Cards} Cards were played automatically this turn, Draw {Amount} Cards and Gain {Amount:energyIcons()} next turn",
+  "DELTAWARRIORS-AS_ONE_POWER.title": "As One",
+
+  "DELTAWARRIORS-PIROUETTE_POWER.description": "At the start of your turn, [red]increase[/red] the energy cost of {Amount:plural:a card|{} cards} in your draw pile and decrease the energy cost of {Amount:plural:a card|{} cards} in your hand.",
+  "DELTAWARRIORS-PIROUETTE_POWER.smartDescription": "At the start of your turn, [red]increase[/red] the energy cost of {Amount:plural:a card|{} cards} in your draw pile and decrease the energy cost of {Amount:plural:a card|{} cards} in your hand.",
+  "DELTAWARRIORS-PIROUETTE_POWER.title": "Chaotic Spin",
+
+  "DELTAWARRIORS-BACKTRACKING_POWER.description": "At the start of your turn all enemies gain {Amount} Otherworldly Corruption",
+  "DELTAWARRIORS-BACKTRACKING_POWER.smartDescription": "At the start of your turn all enemies gain {Amount} Otherworldly Corruption",
+  "DELTAWARRIORS-BACKTRACKING_POWER.title": "Backtracking",
+
+  "DELTAWARRIORS-PREPARATION_POWER.description": "[gold]Automatically[/gold] play the next {Amount:plural:power|{} powers} drawn that can be played this way.",
+  "DELTAWARRIORS-PREPARATION_POWER.smartDescription": "[gold]Automatically[/gold] play the next {Amount:plural:power|{} powers} drawn that can be played this way.",
+  "DELTAWARRIORS-PREPARATION_POWER.title": "Preparation",
+
+  "DELTAWARRIORS-INTROSPECTION_POWER.description": "At the start of your turn return the last played {Amount:plural:card|{} cards} to your hand.",
+  "DELTAWARRIORS-INTROSPECTION_POWER.smartDescription": "At the start of your turn return the last played {Amount:plural:card|{} cards} to your hand.",
+  "DELTAWARRIORS-INTROSPECTION_POWER.title": "Introspective",
+
+  "DELTAWARRIORS-FLATTERED_POWER.description": "Prevent the next {Amount:plural:debuff|{} debuffs} {OwnerName} gives to {Applier}",
+  "DELTAWARRIORS-FLATTERED_POWER.smartDescription": "Prevent the next {Amount:plural:debuff|{} debuffs} {OwnerName} gives to {Applier}",
+  "DELTAWARRIORS-FLATTERED_POWER.title": "Flattered",
+
+  "DELTAWARRIORS-REPLACED_POWER.description": "The first time you play a [gold]Manual[/gold] card this turn draw {Amount}.",
+  "DELTAWARRIORS-REPLACED_POWER.smartDescription": "The first time you play a [gold]Manual[/gold] card this turn draw {Amount}.",
+  "DELTAWARRIORS-REPLACED_POWER.title": "Replaced",
+
+  "DELTAWARRIORS-UNREMARKABLE_POWER.description": "Block {Amount} when a common or basic card is played",
+  "DELTAWARRIORS-UNREMARKABLE_POWER.smartDescription": "Block {Amount} when a common or basic card is played",
+  "DELTAWARRIORS-UNREMARKABLE_POWER.title": "Unremarkable",
+
+  "DELTAWARRIORS-MISSING_HAND_POWER.description": "Hand size is set to {Cards}",
+  "DELTAWARRIORS-MISSING_HAND_POWER.smartDescription": "Hand size is set to {Cards}",
+  "DELTAWARRIORS-MISSING_HAND_POWER.title": "Missing Your Hand",
+
+  "DELTAWARRIORS-SHRINE_POWER.description": "",
+  "DELTAWARRIORS-SHRINE_POWER.smartDescription": "At the start of your next {Amount:plural:turn|{} turns} gain {Energy:energyIcons()}. {OwnerName} plays your next {Amount:plural:turn|{} turns} for you.",
+  "DELTAWARRIORS-SHRINE_POWER.title": "Shrine",
+  
+  "DELTAWARRIORS-SHADOW_MANTLE_POWER.description": "When you shuffle your deck, move half your curses and statuses to your discard pile",
+  "DELTAWARRIORS-SHADOW_MANTLE_POWER.smartDescription": "When you shuffle your deck, move half your curses and statuses to your discard pile",
+  "DELTAWARRIORS-SHADOW_MANTLE_POWER.title": "Shadow Mantle",
+
+  "DELTAWARRIORS-ROOTS_POWER.description": "",
+  "DELTAWARRIORS-ROOTS_POWER.smartDescription": "The next card played [gold]Automatically[/gold] gets replay 1",
+  "DELTAWARRIORS-ROOTS_POWER.title": "Roots"
+}

@@ -1,0 +1,16 @@
+{
+  "DELTAWARRIORS-THE_CAGE.aromaPrinciple": "[red][sine]I must protect them... Protect everyone from what I let in...[/sine][/red]",
+  "DELTAWARRIORS-THE_CAGE.banter.alive.endTurnPing": "[red]PROCEED[/red]",
+  "DELTAWARRIORS-THE_CAGE.banter.dead.endTurnPing": "...",
+  "DELTAWARRIORS-THE_CAGE.cardsModifierDescription": "Cage cards will now appear in rewards and shops.",
+  "DELTAWARRIORS-THE_CAGE.cardsModifierTitle": "Cage Cards",
+  "DELTAWARRIORS-THE_CAGE.description": "Made a promise that went terribly wrong.\nCommanded to fight in battle by what they trap.",
+  "DELTAWARRIORS-THE_CAGE.eventDeathPrevention": "I wont let [red]YOU[/red] abandon the team.",
+  "DELTAWARRIORS-THE_CAGE.goldMonologue": "[sine]So much gold to spend... The favors I can buy with this...[/sine]",
+  "DELTAWARRIORS-THE_CAGE.possessiveAdjective": "their",
+  "DELTAWARRIORS-THE_CAGE.pronounObject": "them",
+  "DELTAWARRIORS-THE_CAGE.pronounPossessive": "theirs",
+  "DELTAWARRIORS-THE_CAGE.pronounSubject": "them",
+  "DELTAWARRIORS-THE_CAGE.title": "The Cage",
+  "DELTAWARRIORS-THE_CAGE.titleObject": "The Cage"
+}

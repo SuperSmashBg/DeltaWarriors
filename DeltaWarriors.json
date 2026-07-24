@@ -1,0 +1,14 @@
+﻿{
+  "id": "DeltaWarriors",
+  "name": "Delta Warriors",
+  "author": "Hemming",
+  "description": "Deltarune in Slay the Spire 2",
+  "version": "v0.1.0",
+  "min_game_version": "0.107.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [
+    {"id": "BaseLib", "min_version": "3.3.6"}
+  ],
+  "affects_gameplay": true
+}

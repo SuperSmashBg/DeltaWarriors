@@ -1,0 +1,19 @@
+{
+  "DELTAWARRIORS-DW_SCRY.title": "Scry",
+  "DELTAWARRIORS-DW_SCRY.description": "Look at the next {dwScry} Cards in your draw pile. You may discard any of them",
+
+  "DELTAWARRIORS-DW_TEMP_COMMAND.title": "Temporary Command",
+  "DELTAWARRIORS-DW_TEMP_COMMAND.description": "This turn, your character draws and plays the next {dwTempCommand} cards when you end your turn",
+
+  "DELTAWARRIORS-COMMAND_POWER.title": "Command",
+  "DELTAWARRIORS-COMMAND_POWER.description": "Your character draws and plays the next {CommandPower} cards when you end your turn",
+
+  "DELTAWARRIORS-TO_REWORK.title": "Card to be reworked",
+  "DELTAWARRIORS-TO_REWORK.description": "Looking to rework with new mechanics.",
+
+  "DELTAWARRIORS-TO_BALANCE.title": "Card to be balanced",
+  "DELTAWARRIORS-TO_BALANCE.description": "Current state of this card is unbalanced.",
+
+  "DELTAWARRIORS-TO_EXPAND.title": "Idea to expand on",
+  "DELTAWARRIORS-TO_EXPAND.description": "Has a mechanic that could be good to explore."
+}

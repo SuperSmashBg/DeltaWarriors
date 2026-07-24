@@ -1,0 +1,9 @@
+{
+  "DELTAWARRIORS-BALL_OF_JUNK.description": "The first card played [gold]Automatically[/gold] returns to your hand next turn costing {Energy:energyIcons()} less this combat",
+  "DELTAWARRIORS-BALL_OF_JUNK.flavor": "A small ball of accumulated things",
+  "DELTAWARRIORS-BALL_OF_JUNK.title": "Ball of Junk",
+
+  "DELTAWARRIORS-BALL_OF_JUNK_PLUS.description": "The first card played [gold]Automatically[/gold] returns to your hand next turn, is free that combat and gains [gold]Replay[/gold] {Repeat:diff()}",
+  "DELTAWARRIORS-BALL_OF_JUNK_PLUS.flavor": "A small ball of accumulated things made but better",
+  "DELTAWARRIORS-BALL_OF_JUNK_PLUS.title": "Ball of Junk Plus"
+}

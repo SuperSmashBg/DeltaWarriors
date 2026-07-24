@@ -1,0 +1,10 @@
+{
+  "DELTAWARRIORS-BOTTLED_DARKWORLD_POTION.description": "Reduce the cost of all cards in hand this combat by {Energy:energyIcons}.",
+  "DELTAWARRIORS-BOTTLED_DARKWORLD_POTION.title": "Bottled Darkworld",
+
+  "DELTAWARRIORS-HOLLOW_FLASK_POTION.description": "Gain {dwTempCommand:diff()} [gold]Command[/gold] this turn.",
+  "DELTAWARRIORS-HOLLOW_FLASK_POTION.title": "Hollow Flask",
+
+  "DELTAWARRIORS-GLIMMERING_SOLUTION_POTION.description": "[gold]Scry[/gold] {dwScry:diff()}",
+  "DELTAWARRIORS-GLIMMERING_SOLUTION_POTION.title": "Glimmering Solution"
+}
