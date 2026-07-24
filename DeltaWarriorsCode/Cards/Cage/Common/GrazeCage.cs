@@ -15,9 +15,14 @@ public class GrazeCage() : CageCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move), new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new BlockVar(7, ValueProp.Move), 
+        new CardsVar(1)
+    ];
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.Static(DeltaEnums.ToExpand)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

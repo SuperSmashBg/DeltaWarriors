@@ -16,10 +16,15 @@ public class BiteTheHandCage() : CageCard(3,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new PowerVar<StrengthPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DamageVar(12, ValueProp.Move), 
+        new PowerVar<StrengthPower>(1)
+    ];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand),
-        HoverTipFactory.FromPower<StrengthPower>(DynamicVars.Power<StrengthPower>().IntValue)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.Static(DeltaEnums.ToExpand),
+        HoverTipFactory.FromPower<StrengthPower>(DynamicVars.Power<StrengthPower>().IntValue)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -31,6 +36,6 @@ public class BiteTheHandCage() : CageCard(3,
     
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(4);
+        DynamicVars.Damage.UpgradeValueBy(6);
     }
 }

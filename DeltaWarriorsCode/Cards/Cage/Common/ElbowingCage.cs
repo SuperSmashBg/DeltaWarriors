@@ -12,16 +12,13 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Cards.Cage.Common;
 
-// TODO
-//  This card SUCKS fix it
 public class ElbowingCage() : CageCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CalculationBaseVar(6),
-        new ExtraDamageVar(8),
-        // Cannot use _wasPlayedAutomatically like this!!!
+        new CalculationBaseVar(7),
+        new ExtraDamageVar(11),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier((model, _) => (model as ElbowingCage)?._wasPlayedAutomatically ?? false ? 1 : 0)];
 
     private bool _wasPlayedAutomatically = false;
@@ -45,7 +42,7 @@ public class ElbowingCage() : CageCard(1,
     
     public override Task BeforeCardAutoPlayed(CardModel card, Creature? target, AutoPlayType type)
     {
-        if (card == this)_wasPlayedAutomatically = true;
+        if (card == this) _wasPlayedAutomatically = true;
         return base.BeforeCardAutoPlayed(card, target, type);
     }
 }

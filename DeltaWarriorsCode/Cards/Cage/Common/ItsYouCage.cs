@@ -18,17 +18,16 @@ public class ItsYouCage() : CageCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToBalance)];
+        
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        int hits = 1;
-        if (EnergyCost.HasLocalModifiers) hits = 2;
-        await CommonActions.CardAttack(this, play, hits).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, ShouldGlowGoldInternal? 2: 1).Execute(choiceContext);
     }
 
-    protected override bool ShouldGlowGoldInternal => EnergyCost.HasLocalModifiers;
+    protected override bool ShouldGlowGoldInternal => PileType.Hand.GetPile(Owner).Cards.Any(c => c != this && c.EnergyCost.HasLocalModifiers);
 
     protected override void OnUpgrade()
     {

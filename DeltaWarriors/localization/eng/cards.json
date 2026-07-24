@@ -17,13 +17,13 @@
   "DELTAWARRIORS-DARKNESS_FORM_CAGE.description": "Gain {CommandPower:diff()} [gold]Command[/gold]. [red]Lose[/red] {Energy:energyIcons()} at the start of each turn",
   "DELTAWARRIORS-DARKNESS_FORM_CAGE.title": "Darkness Form",
 
-  "DELTAWARRIORS-ITEM_CAGE.description": "Add a random skill to your hand. It gains exhaust and is free to play {IfUpgraded:show:this combat|this turn}.",
+  "DELTAWARRIORS-ITEM_CAGE.description": "Add a random skill to your [gold]Hand[/gold]. It gains exhaust and is free to play {IfUpgraded:show:this combat|this turn}.",
   "DELTAWARRIORS-ITEM_CAGE.title": "ITEM",
 
-  "DELTAWARRIORS-ELBOWING_CAGE.description": "Deal {CalculatedDamage:diff()} damage. Deals an extra {ExtraDamage:diff()} if played automatically",
+  "DELTAWARRIORS-ELBOWING_CAGE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals an extra {ExtraDamage:diff()} when played by automatic play effects.",
   "DELTAWARRIORS-ELBOWING_CAGE.title": "Elbowing",
 
-  "DELTAWARRIORS-GRAZE_CAGE.description": "[gold]Block[/gold] {Block:diff()}. Draw {Cards:diff()} more {Cards:plural:card|cards} next turn",
+  "DELTAWARRIORS-GRAZE_CAGE.description": "[gold]Block[/gold] {Block:diff()}.\nNext turn, Draw {Cards:diff()} {Cards:plural:card|cards}.",
   "DELTAWARRIORS-GRAZE_CAGE.title": "Graze",
 
   "DELTAWARRIORS-THE_LEGEND_CAGE.description": "[gold]Scry[/gold] {dwScry:diff()}",
@@ -47,11 +47,11 @@
   "DELTAWARRIORS-STRIKE_THE_GROUND_CAGE.description": "Deal {Damage:diff()} to ALL enemies. Free this combat after being played [gold]Automatically[/gold].",
   "DELTAWARRIORS-STRIKE_THE_GROUND_CAGE.title": "Strike the Ground",
 
-  "DELTAWARRIORS-AGENCY_CAGE.description": "Select {Cards:plural:a card|{} cards} in your hand. {Cards:plural:It costs|They cost} {Energy:diff()} less this combat",
-  "DELTAWARRIORS-AGENCY_CAGE.selectionScreenPrompt": "Choose a card to reduce the cost of",
+  "DELTAWARRIORS-AGENCY_CAGE.description": "Select {Cards:plural:a card|[blue]{}[/blue] cards} in your [gold]Hand[/gold].\nReduce {Cards:plural:its|their} cost by {Energy:energyIcons()}.",
+  "DELTAWARRIORS-AGENCY_CAGE.selectionScreenPrompt": "Choose a card to reduce in cost.",
   "DELTAWARRIORS-AGENCY_CAGE.title": "Agency",
 
-  "DELTAWARRIORS-AMBER_CARD_CAGE.description": "Gain [gold]Block[/gold] equal to {CalculationExtra} times the number of cards in hand. Currently ({CalculatedBlock:diff()}).",
+  "DELTAWARRIORS-AMBER_CARD_CAGE.description": "[gold]Block[/gold] equal to {CalculationExtra} times the number of cards in your [gold]Hand[/gold].{InCombat:\nCurrently ({CalculatedBlock:diff()}).|}",
   "DELTAWARRIORS-AMBER_CARD_CAGE.title": "Card of Amber",
 
   "DELTAWARRIORS-TWISTED_BLADE_CAGE.description": "Deal {Damage:diff()} damage",
@@ -66,7 +66,7 @@
   "DELTAWARRIORS-X_ACTION_CAGE.description": "[gold]Command[/gold] {TempXActionPower:diff()} this turn.",
   "DELTAWARRIORS-X_ACTION_CAGE.title": "X-Action",
 
-  "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.description": "At the start of your turn [gold]Scry[/gold] {Scry:diff()}",
+  "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.description": "At the start of your turn [gold]Scry[/gold] {Scry:diff()}.",
   "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.title": "Vessel's Purpose",
 
   "DELTAWARRIORS-PROCEED_CAGE.description": "Gain {Energy:energyIcons()}\n[gold]Command[/gold] has no effect for {NoCommandPower:diff()} turn",
@@ -75,7 +75,7 @@
   "DELTAWARRIORS-SPOOKY_BLADE_CAGE.description": "Deal {Damage:diff()} to ALL enemies. Draw {DrawLessNextTurn:diff()} fewer {DrawLessNextTurn:plural:card|cards} next turn",
   "DELTAWARRIORS-SPOOKY_BLADE_CAGE.title": "Spooky Blade",
 
-  "DELTAWARRIORS-BITE_THE_HAND_CAGE.description": "Deal {Damage:diff()} damage. Gain {StrengthPower:diff()} [gold]Strength[/gold]",
+  "DELTAWARRIORS-BITE_THE_HAND_CAGE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
   "DELTAWARRIORS-BITE_THE_HAND_CAGE.title": "Bite the Hand",
 
   "DELTAWARRIORS-LIGHT_WITHIN.description": "[gold]Scry[/gold] {dwScry:diff()}. [gold]Command[/gold] {dwTempCommand:diff()} this turn",
@@ -90,8 +90,9 @@
   "DELTAWARRIORS-DISTORTED_REFLECTION_CAGE.description": "Deal {cardPower} to ALL enemies when you play a card with a modified cost",
   "DELTAWARRIORS-DISTORTED_REFLECTION_CAGE.title": "Distorted Reflection",
 
-  "DELTAWARRIORS-FORCED_COMBAT_CAGE.description": "Deal {Damage:diff()} damage. Draw {Cards:plural:{} card|{} cards} {IfUpgraded:show:now and next turn|}",
-  "DELTAWARRIORS-FORCED_COMBAT_CAGE.title": "Scripted Fight",
+  "DELTAWARRIORS-CHECK_CAGE.description": "Put a card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
+  "DELTAWARRIORS-CHECK_CAGE.selectionScreenPrompt": "Choose a card to put on top of your Draw Pile.",
+  "DELTAWARRIORS-CHECK_CAGE.title": "Scripted Fight",
 
   "DELTAWARRIORS-RESENTMENT_CAGE.description": "Deal {CalculatedDamage:diff()} damage. Deals an extra {ExtraDamage:diff()} for each card played [gold]Automatically[/gold]",
   "DELTAWARRIORS-RESENTMENT_CAGE.title": "Resentment",
@@ -207,10 +208,10 @@
   "DELTAWARRIORS-ATHLETICS_CAGE.description": "Gain {Block:diff()} [gold]Block[/gold] next turn.",
   "DELTAWARRIORS-ATHLETICS_CAGE.title": "Athletics",
 
-  "DELTAWARRIORS-ITS_YOU_CAGE.description": "Deal {Damage:diff()} Damage. Hits twice if this card's cost has been modified",
+  "DELTAWARRIORS-ITS_YOU_CAGE.description": "Deal {Damage:diff()} Damage. Hits twice if a card in your [gold]Hand[/gold] cost was modified",
   "DELTAWARRIORS-ITS_YOU_CAGE.title": "It's You",
 
-  "DELTAWARRIORS-DARK_CANDY_CAGE.description": "Gain {Energy:energyIcons()}",
+  "DELTAWARRIORS-DARK_CANDY_CAGE.description": "Gain {Energy:energyIcons()}.\n[gold]Scry[/gold] {Scry:diff()}",
   "DELTAWARRIORS-DARK_CANDY_CAGE.title": "Dark Candy",
 
   "DELTAWARRIORS-SPARE_PENCIL_CAGE.description": "Deal {Damage:diff()} Damage.\nAlways shuffled to the bottom of the deck.",
@@ -253,7 +254,7 @@
   "DELTAWARRIORS-MYSTERIOUS_CALL_CAGE.description": "[gold]Command[/gold] {dwTempCommand:diff()} this turn.",
   "DELTAWARRIORS-MYSTERIOUS_CALL_CAGE.title": "Mysterious Call",
 
-  "DELTAWARRIORS-MADDENING_CAGE.description": "Select a card in your hand to make free this combat.",
+  "DELTAWARRIORS-MADDENING_CAGE.description": "Select a card in your [gold]Hand[/gold] to make free this combat.",
   "DELTAWARRIORS-MADDENING_CAGE.title": "Maddening",
   "DELTAWARRIORS-MADDENING_CAGE.selectionScreenPrompt": "Select a card to make free.",
 

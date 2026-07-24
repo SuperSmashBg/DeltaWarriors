@@ -13,9 +13,11 @@ public class AmberCardCage() : CageCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CalculationBaseVar(0), 
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new CalculationBaseVar(0), 
         new CalculationExtraVar(2),
-        new CalculatedBlockVar(ValueProp.Move).WithMultiplier((card, _) => PileType.Hand.GetPile(card.Owner).Cards.Count(c => c != card))];
+        new CalculatedBlockVar(ValueProp.Move).WithMultiplier((card, _) => PileType.Hand.GetPile(card.Owner).Cards.Count(c => c != card))
+    ];
 
     
     protected override async Task OnPlay(

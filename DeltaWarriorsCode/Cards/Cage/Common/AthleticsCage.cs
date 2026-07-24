@@ -1,3 +1,4 @@
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using DeltaWarriors.DeltaWarriorsCode.Cards.Cage;
 using DeltaWarriors.DeltaWarriorsCode.Extensions;
@@ -17,7 +18,7 @@ public class AthleticsCage() : CageCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(10, ValueProp.Move)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToBalance)];
 
     protected override async Task OnPlay(

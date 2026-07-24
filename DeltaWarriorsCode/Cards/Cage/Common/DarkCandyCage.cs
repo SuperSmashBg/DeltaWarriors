@@ -1,3 +1,6 @@
+using BaseLib.Cards.Variables;
+using BaseLib.Commands;
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using DeltaWarriors.DeltaWarriorsCode.Cards.Cage;
 using DeltaWarriors.DeltaWarriorsCode.Keywords;
@@ -12,18 +15,24 @@ public class DarkCandyCage() : CageCard(0,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, CardKeyword.Retain];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new EnergyVar(1),
+        new ScryVar(1).WithTooltip()
+    ];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Exhaust
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
+        await ScryCmd.Execute(choiceContext, this);
     }
 
     protected override void OnUpgrade()
     {
-        AddKeyword(DeltaKeywords.Manual);
+        DynamicVars.Scry().UpgradeValueBy(2);
     }
 }

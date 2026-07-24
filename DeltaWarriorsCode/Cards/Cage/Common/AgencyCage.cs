@@ -20,16 +20,11 @@ public class AgencyCage() : CageCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        // Select a card
-        IEnumerable<CardModel> selectedCard = await CardSelectCmd.FromHand(choiceContext, Owner, new CardSelectorPrefs(SelectionScreenPrompt, DynamicVars.Cards.IntValue), null, (AbstractModel) this);
-        foreach (CardModel card in selectedCard)
-        {
-            if (!card.EnergyCost.CostsX)
-            {
-                card.EnergyCost.AddThisCombat(-DynamicVars.Energy.IntValue);
-            }
-            
-        }
+        IEnumerable<CardModel> selectedCard = await CardSelectCmd.FromHand(choiceContext, Owner, 
+            new CardSelectorPrefs(SelectionScreenPrompt, DynamicVars.Cards.IntValue), null,  this);
+        
+        foreach (CardModel card in selectedCard) 
+            if (!card.EnergyCost.CostsX) card.EnergyCost.AddThisCombat(-DynamicVars.Energy.IntValue);
     }
 
     protected override void OnUpgrade()
