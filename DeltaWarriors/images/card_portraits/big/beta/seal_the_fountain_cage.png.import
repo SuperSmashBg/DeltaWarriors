@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkq3fccojfuye"
-path="res://.godot/imported/forced_combat_cage.png-b0567f0b0b48c86e24b64f7b92330107.ctex"
+uid="uid://df2rhwlfxii3u"
+path="res://.godot/imported/seal_the_fountain_cage.png-cd374468520b38c7849f4ffac8fc1131.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DeltaWarriors/images/card_portraits/big/beta/forced_combat_cage.png"
-dest_files=["res://.godot/imported/forced_combat_cage.png-b0567f0b0b48c86e24b64f7b92330107.ctex"]
+source_file="res://DeltaWarriors/images/card_portraits/big/beta/seal_the_fountain_cage.png"
+dest_files=["res://.godot/imported/seal_the_fountain_cage.png-cd374468520b38c7849f4ffac8fc1131.ctex"]
 
 [params]
 

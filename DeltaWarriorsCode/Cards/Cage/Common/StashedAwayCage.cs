@@ -12,9 +12,15 @@ public class StashedAwayCage() : CageCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RetainHandPower>(1)];
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Retain)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new PowerVar<RetainHandPower>(1)
+    ];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Exhaust
+    ];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(CardKeyword.Retain)
+    ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play) =>
         await CommonActions.ApplySelf<RetainHandPower>(choiceContext, this);

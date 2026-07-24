@@ -50,7 +50,7 @@
   "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.smartDescription": "Deal {Amount} Damage to a random enemy whenever you shuffle your deck",
   "DELTAWARRIORS-HAUNTING_MEMORIES_POWER.title": "Haunting Memories",
 
-  "DELTAWARRIORS-DIMINISH_POWER.description": "Target take additional damage from automatically played attacks.",
+  "DELTAWARRIORS-DIMINISH_POWER.description": "Target takes additional damage from automatically played attacks.",
   "DELTAWARRIORS-DIMINISH_POWER.smartDescription": "Takes [blue]{Amount}[/blue] more damage from automatically played attacks.",
   "DELTAWARRIORS-DIMINISH_POWER.title": "Diminished",
 

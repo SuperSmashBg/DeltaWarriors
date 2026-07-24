@@ -14,8 +14,8 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace DeltaWarriors.DeltaWarriorsCode.Cards.Cage.Common;
 
 public class CheckCage() : CageCard(0,
-    CardType.Attack, CardRarity.Common,
-    TargetType.AnyEnemy)
+    CardType.Skill, CardRarity.Common,
+    TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     

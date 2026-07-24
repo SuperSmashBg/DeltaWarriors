@@ -18,18 +18,20 @@ public class SpookyBladeCage() : CageCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new PowerVar<DrawLessNextTurn>(1)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DamageVar(11, ValueProp.Move), 
+        new PowerVar<DrawLessNextTurn>(1)
+    ];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.Static(DeltaEnums.ToExpand)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         if (CombatState == null) return;
-        await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
-            .FromCard(this, play).TargetingAllOpponents(CombatState)
-            .WithHitFx("vfx/vfx_attack_slash")
-            .Execute(choiceContext);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
         await CommonActions.ApplySelf<DrawLessNextTurn>(choiceContext, this);
     }
 

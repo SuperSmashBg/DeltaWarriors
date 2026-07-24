@@ -16,10 +16,12 @@ public class SparePencilCage() : CageCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(13, ValueProp.Move)];
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand),
-        HoverTipFactory.Static(DeltaEnums.ToBalance)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.Static(DeltaEnums.ToExpand),
+        HoverTipFactory.Static(DeltaEnums.ToBalance)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
