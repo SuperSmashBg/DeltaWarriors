@@ -17,20 +17,20 @@ public class LightWithin() : CageCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVar(2).WithTooltip(), 
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVarOld(2).WithTooltip(), 
         new TempCommandVar(2).WithTooltip()];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVar().IntValue, this);
+        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVarOld().IntValue, this);
         await CommonActions.ApplySelf<TempLightWithinPower>(choiceContext, this,
             DynamicVars.TempCommandVar().BaseValue);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.ScryVar().UpgradeValueBy(2);
+        DynamicVars.ScryVarOld().UpgradeValueBy(2);
     }
 }

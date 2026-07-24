@@ -14,7 +14,7 @@ public class YouPromisedCage() : CageCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVar(2).WithTooltip(), new CardsVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVarOld(2).WithTooltip(), new CardsVar(3)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

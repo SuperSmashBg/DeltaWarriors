@@ -21,10 +21,10 @@ public class GlimmeringSolutionPotion : CustomPotionModel
     public override TargetType TargetType => TargetType.AnyPlayer;
     public override PotionUsage Usage => PotionUsage.CombatOnly;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVar(5).WithTooltip()];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVarOld(5).WithTooltip()];
 
     protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
-        if (target is { Player: not null }) await ScryBehavior.Execute(choiceContext, target.Player, DynamicVars.ScryVar().IntValue, this);
+        if (target is { Player: not null }) await ScryBehavior.Execute(choiceContext, target.Player, DynamicVars.ScryVarOld().IntValue, this);
     }
 }

@@ -1,6 +1,6 @@
 {
-  "DELTAWARRIORS-COMMAND_POWER.description": "Draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn",
-  "DELTAWARRIORS-COMMAND_POWER.smartDescription": "Draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn",
+  "DELTAWARRIORS-COMMAND_POWER.description": "Automatically draw and play cards when you end turn",
+  "DELTAWARRIORS-COMMAND_POWER.smartDescription": "{OwnerName} will draw and play the next {Amount:plural:card|[blue]{}[/blue] cards} when you end your turn",
   "DELTAWARRIORS-COMMAND_POWER.title": "Command",
 
   "DELTAWARRIORS-TEMP_COMMAND_POWER.description": "Gain {Amount} Command this turn",

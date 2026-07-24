@@ -16,20 +16,20 @@ public class CutThroughFateCage() : CageCard(1,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new ScryVar(2).WithTooltip(), new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new ScryVarOld(2).WithTooltip(), new CardsVar(1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await CommonActions.CardAttack(this, play, vfx:"vfx/vfx_attack_slash").Execute(choiceContext);
-        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVar().IntValue, this);
+        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVarOld().IntValue, this);
         await CommonActions.Draw(this, choiceContext);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2);
-        DynamicVars.ScryVar().UpgradeValueBy(1);
+        DynamicVars.ScryVarOld().UpgradeValueBy(1);
     }
 }

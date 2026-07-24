@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Keywords;
 
+[Obsolete("WTF IS THIS SHIT")]
 public class DeltaPowerVar<T> : PowerVar<T>
     where T : PowerModel
 {

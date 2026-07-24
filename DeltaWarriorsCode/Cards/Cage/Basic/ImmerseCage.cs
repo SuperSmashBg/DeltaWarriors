@@ -19,7 +19,7 @@ public class ImmerseCage() : CageCard(0,
     CardType.Skill, CardRarity.Basic,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVar(2).WithTooltip(), 
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVarOld(2).WithTooltip(), 
         new PowerVar<OtherworldlyCorruptionPower>(2)
     ];
     
@@ -31,12 +31,12 @@ public class ImmerseCage() : CageCard(0,
         CardPlay play)
     {
         await CommonActions.Apply<OtherworldlyCorruptionPower>(choiceContext, this, play);
-        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVar().IntValue, this);
+        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVarOld().IntValue, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.ScryVar().UpgradeValueBy(1);
+        DynamicVars.ScryVarOld().UpgradeValueBy(1);
     }
     
 }

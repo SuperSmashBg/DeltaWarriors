@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Behaviors;
 
+[Obsolete]
 public interface IOnScry
 {
     Task OnScry(PlayerChoiceContext choiceContext, Player player, IEnumerable<CardModel> discarded, int scryTotal, AbstractModel source);

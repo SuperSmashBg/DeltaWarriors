@@ -66,7 +66,7 @@
   "DELTAWARRIORS-X_ACTION_CAGE.description": "[gold]Command[/gold] {dwTempCommand:diff()} this turn.",
   "DELTAWARRIORS-X_ACTION_CAGE.title": "X-Action",
 
-  "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.description": "[gold]Scry[/gold] {dwScry:diff()} at the start of each turn",
+  "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.description": "[gold]Scry[/gold] {Scry:diff()} at the start of each turn",
   "DELTAWARRIORS-VESSELS_PURPOSE_CAGE.title": "Vessel's Purpose",
 
   "DELTAWARRIORS-PROCEED_CAGE.description": "Gain {Energy:energyIcons()}\n[gold]Command[/gold] has no effect for {NoCommandPower:diff()} turn",

@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Keywords;
 
+[Obsolete("Use PowerVar and HovertipFactory")]
 public class TempCommandVar : DynamicVar
 {
     public const string Key = "dwTempCommand";

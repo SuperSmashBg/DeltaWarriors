@@ -40,7 +40,7 @@ public static class ScryBehavior
 
     public static Task Execute(PlayerChoiceContext choiceContext, Player player, AbstractModel source)
     {
-        int amount = source.GetDynamicVar(ScryVar.Key).IntValue;
+        int amount = source.GetDynamicVar(ScryVarOld.Key).IntValue;
         return Execute(choiceContext, player, amount, source);
     }
     

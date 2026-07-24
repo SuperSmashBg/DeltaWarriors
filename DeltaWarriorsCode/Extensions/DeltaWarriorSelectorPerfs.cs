@@ -7,6 +7,8 @@ public struct DeltaWarriorSelectorPerfs
 {
     private const string CardSelectionTable = "card_selection";
     private const string CardTable = "cards";
+    
+    [Obsolete("Use Baselib scry")]
     public static LocString ScrySelectionPrompt =>
         new LocString(CardSelectionTable, "TO_SCRY");
     

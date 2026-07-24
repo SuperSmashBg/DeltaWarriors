@@ -1,3 +1,4 @@
+using BaseLib.Cards.Variables;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using DeltaWarriors.DeltaWarriorsCode.Cards.Cage;
@@ -23,11 +24,11 @@ public class VesselsPurposeCage() : CageCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.ApplySelf<VesselsPurposePower>(choiceContext, this, DynamicVars.Block.BaseValue);
+        await CommonActions.ApplySelf<VesselsPurposePower>(choiceContext, this, DynamicVars.Scry().BaseValue);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.ScryVar().UpgradeValueBy(2);
+        DynamicVars.Scry().UpgradeValueBy(2);
     }
 }

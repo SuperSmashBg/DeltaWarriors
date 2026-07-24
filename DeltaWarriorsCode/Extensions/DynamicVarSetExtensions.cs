@@ -6,11 +6,13 @@ namespace DeltaWarriors.DeltaWarriorsCode.Extensions;
 
 public static class DynamicVarSetExtensions
 {
-    public static ScryVar ScryVar(this DynamicVarSet vars)
+    [Obsolete]
+    public static ScryVarOld ScryVarOld(this DynamicVarSet vars)
     {
-        return (ScryVar)vars["dwScry"];
+        return (ScryVarOld)vars["dwScry"];
     }
     
+    [Obsolete]
     public static DynamicVar TempCommandVar(this DynamicVarSet vars)
     {
         return vars["dwTempCommand"];

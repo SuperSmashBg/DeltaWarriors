@@ -14,14 +14,14 @@ public class TheLegendCage() : CageCard(1,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVar(10).WithTooltip()];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVarOld(10).WithTooltip()];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, DeltaKeywords.Manual];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVar().IntValue, this);
+        await ScryBehavior.Execute(choiceContext, Owner, DynamicVars.ScryVarOld().IntValue, this);
     }
 
     protected override void OnUpgrade()
