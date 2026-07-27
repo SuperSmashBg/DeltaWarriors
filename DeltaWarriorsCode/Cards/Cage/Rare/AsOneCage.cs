@@ -14,7 +14,6 @@ public class AsOneCage() : CageCard(3,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2), new CardsVar(3)];
     
-
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

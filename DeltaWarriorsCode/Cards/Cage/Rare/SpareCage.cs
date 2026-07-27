@@ -16,7 +16,8 @@ public class SpareCage() : CageCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<NoDamagePower>(4), 
         new PowerVar<MercifulPower>(1), 
-        new DynamicVar("DamageDecrease", 0.5M)];
+        new DynamicVar("DamageDecrease", 0.5M)
+    ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToBalance)];
 

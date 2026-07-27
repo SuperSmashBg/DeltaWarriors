@@ -14,7 +14,9 @@ public class ShadowMantleCage() : CageCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ShadowMantlePower>(1)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.Static(DeltaEnums.ToExpand)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

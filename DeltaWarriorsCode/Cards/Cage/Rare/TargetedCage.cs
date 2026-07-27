@@ -14,7 +14,10 @@ public class TargetedCage() : CageCard(2,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(22, ValueProp.Move), new PowerVar<DrawLessNextTurn>(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new BlockVar(22, ValueProp.Move), 
+        new PowerVar<DrawLessNextTurn>(2)
+    ];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToRework)];
 
     protected override async Task OnPlay(

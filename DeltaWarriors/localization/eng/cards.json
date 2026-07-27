@@ -14,7 +14,7 @@
   "DELTAWARRIORS-THROW_CAGE.description": "Deal {Damage:diff()} damage.\n[gold]Command[/gold] {TempThrowPower:diff()} this turn.",
   "DELTAWARRIORS-THROW_CAGE.title": "Throw",
   
-  "DELTAWARRIORS-DARKNESS_FORM_CAGE.description": "Gain {CommandPower:diff()} [gold]Command[/gold]. [red]Lose[/red] {Energy:energyIcons()} at the start of each turn",
+  "DELTAWARRIORS-DARKNESS_FORM_CAGE.description": "[gold]Command[/gold] {CommandPower:diff()}.\nLose {Energy:energyIcons()} at the start of your turn.",
   "DELTAWARRIORS-DARKNESS_FORM_CAGE.title": "Darkness Form",
 
   "DELTAWARRIORS-ITEM_CAGE.description": "Add a random skill to your [gold]Hand[/gold]. It gains exhaust and is free to play {IfUpgraded:show:this combat|this turn}.",
@@ -26,7 +26,7 @@
   "DELTAWARRIORS-GRAZE_CAGE.description": "[gold]Block[/gold] {Block:diff()}.\nNext turn, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "DELTAWARRIORS-GRAZE_CAGE.title": "Graze",
 
-  "DELTAWARRIORS-THE_LEGEND_CAGE.description": "[gold]Scry[/gold] {dwScry:diff()}",
+  "DELTAWARRIORS-THE_LEGEND_CAGE.description": "[gold]Scry[/gold] {Scry:diff()}.",
   "DELTAWARRIORS-THE_LEGEND_CAGE.title": "The Legend",
 
   "DELTAWARRIORS-SPLINTER_STRIKE_CAGE.description": "Deal {Damage:diff()} damage.\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
@@ -44,8 +44,8 @@
   "DELTAWARRIORS-PATTERN_RECOGNITION_CAGE.description": "[gold]Block[/gold] {Block:diff()}.",
   "DELTAWARRIORS-PATTERN_RECOGNITION_CAGE.title": "Pattern Recognition",
   
-  "DELTAWARRIORS-STRIKE_THE_GROUND_CAGE.description": "Deal {Damage:diff()} to ALL enemies. Free this combat after being played [gold]Automatically[/gold].",
-  "DELTAWARRIORS-STRIKE_THE_GROUND_CAGE.title": "Strike the Ground",
+  "DELTAWARRIORS-STRIKE_THE_GROUND_CAGE.description": "Deal {Damage:diff()} damage to ALL enemies.\nThis card becomes free if it was automatically played.",
+  "DELTAWARRIORS-STRIKE_THE_GROUND_CAGE.title": "Strike The Ground",
 
   "DELTAWARRIORS-AGENCY_CAGE.description": "Select {Cards:plural:a card|{} cards} in your [gold]Hand[/gold].\nReduce {Cards:plural:its|their} cost by {Energy:energyIcons()}.",
   "DELTAWARRIORS-AGENCY_CAGE.selectionScreenPrompt": "Choose a card to reduce in cost.",
@@ -54,13 +54,13 @@
   "DELTAWARRIORS-AMBER_CARD_CAGE.description": "[gold]Block[/gold] equal to {CalculationExtra} times the number of cards in your [gold]Hand[/gold].{InCombat:\nCurrently ({CalculatedBlock:diff()}).|}",
   "DELTAWARRIORS-AMBER_CARD_CAGE.title": "Card of Amber",
 
-  "DELTAWARRIORS-TWISTED_BLADE_CAGE.description": "Deal {Damage:diff()} damage",
+  "DELTAWARRIORS-TWISTED_BLADE_CAGE.description": "Deal {Damage:diff()} damage.",
   "DELTAWARRIORS-TWISTED_BLADE_CAGE.title": "Twisted Blade",
   
   "DELTAWARRIORS-MOSSY_SHACKLES_CAGE.description": "When a card is played [gold]Automatically[/gold] gain {MossyShacklesPower:diff()} [gold]Block[/gold]",
   "DELTAWARRIORS-MOSSY_SHACKLES_CAGE.title": "Mossy Shackles",
 
-  "DELTAWARRIORS-PLOT_CAGE.description": "Draw {Cards} cards. They are free this turn.",
+  "DELTAWARRIORS-PLOT_CAGE.description": "Draw {Cards:diff()} cards.\nThey are free this turn.",
   "DELTAWARRIORS-PLOT_CAGE.title": "Plot",
 
   "DELTAWARRIORS-X_ACTION_CAGE.description": "[gold]Command[/gold] {TempXActionPower:diff()} this turn.",
@@ -94,19 +94,19 @@
   "DELTAWARRIORS-CHECK_CAGE.selectionScreenPrompt": "Choose a card to put on top of your Draw Pile.",
   "DELTAWARRIORS-CHECK_CAGE.title": "Check",
 
-  "DELTAWARRIORS-RESENTMENT_CAGE.description": "Deal {CalculatedDamage:diff()} damage. Deals an extra {ExtraDamage:diff()} for each card played [gold]Automatically[/gold]",
+  "DELTAWARRIORS-RESENTMENT_CAGE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals an extra {ExtraDamage:diff()} damage for each card automatically played.",
   "DELTAWARRIORS-RESENTMENT_CAGE.title": "Resentment",
 
   "DELTAWARRIORS-BEHIND_THE_BACK_CAGE.description": "[gold]Command[/gold] {CommandPower:diff()}",
   "DELTAWARRIORS-BEHIND_THE_BACK_CAGE.title": "Behind the Back",
 
-  "DELTAWARRIORS-SPARE_CAGE.description": "You cannot deal HP damage to enemies for {NoDamagePower:diff()} turns. You receive [blue]{DamageDecrease:percentLess()}%[/blue] less damage from enemies.",
+  "DELTAWARRIORS-SPARE_CAGE.description": "You cannot deal HP damage to enemies for {NoDamagePower:diff()} turns.\nYou take [blue]{DamageDecrease:percentLess()}%[/blue] less damage from enemies.",
   "DELTAWARRIORS-SPARE_CAGE.title": "SPARE",
 
-  "DELTAWARRIORS-TARGETED_CAGE.description": "[gold]Block[/gold] {Block:diff()}. Draw {DrawLessNextTurn:plural:{} less card|{} less cards} next turn",
+  "DELTAWARRIORS-TARGETED_CAGE.description": "[gold]Block[/gold] {Block:diff()}.\nNext turn, draw {DrawLessNextTurn:diff()} fewer cards.",
   "DELTAWARRIORS-TARGETED_CAGE.title": "Targeted",
 
-  "DELTAWARRIORS-STORAGE_CAGE.description": "Cards drawn [gold]Automatically[/gold] retain for a turn.",
+  "DELTAWARRIORS-STORAGE_CAGE.description": "Cards drawn due to automatically played cards [Gold]Retain[/gold] for a turn.",
   "DELTAWARRIORS-STORAGE_CAGE.title": "Storage",
   
   "DELTAWARRIORS-X_SLASH_CAGE.description": "Deal {Damage:diff()} damage twice.",
@@ -121,13 +121,13 @@
   "DELTAWARRIORS-HUSK_STRIKE_CAGE.description": "Deal {Damage:diff()} Damage and [gold]Block[/gold] {Block:diff()} X times.",
   "DELTAWARRIORS-HUSK_STRIKE_CAGE.title": "Husk Strike",
 
-  "DELTAWARRIORS-BUNKER_CODES_CAGE.description": "Randomly reduce the cost of a card in your hand by {Energy:energyIcons()} this combat. Do this {IfUpgraded:show:X+1|X} times",
+  "DELTAWARRIORS-BUNKER_CODES_CAGE.description": "Reduce the cost of a random card in\nyour [gold]Hand[/gold] by {Energy:energyIcons()}.\nDo this {IfUpgraded:show:X+1|X} times.",
   "DELTAWARRIORS-BUNKER_CODES_CAGE.title": "Bunker Codes",
 
   "DELTAWARRIORS-HAUNTING_MEMORIES_CAGE.description": "Deal {HauntingMemoriesPower:diff()} Damage to a random enemy when you shuffle your draw pile.",
   "DELTAWARRIORS-HAUNTING_MEMORIES_CAGE.title": "Haunting Memories",
 
-  "DELTAWARRIORS-BLACK_SHARD_CAGE.description": "Deal {Damage:diff()} damage. Draw {Cards} cards next turn.",
+  "DELTAWARRIORS-BLACK_SHARD_CAGE.description": "Deal {Damage:diff()} damage.\nNext turn, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "DELTAWARRIORS-BLACK_SHARD_CAGE.title": "Black Shard",
 
   "DELTAWARRIORS-DELIBERATE_MISINTERPRETATION_CAGE.description": "[gold]Scry[/gold] {dwScry:diff()}.\nDiscarded cards cost {Energy:energyIcons()} less this combat.",
@@ -148,7 +148,7 @@
   "DELTAWARRIORS-TAMPERING_CAGE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold].\nApply to ALL enemies if played [gold]Automatically[/gold]",
   "DELTAWARRIORS-TAMPERING_CAGE.title": "Tampering",
 
-  "DELTAWARRIORS-AS_ONE_CAGE.description": "If you Automatically Play {Cards:diff()} or more cards during your turn: Draw {Energy:diff()} Cards and Gain {Energy:energyIcons()} next turn",
+  "DELTAWARRIORS-AS_ONE_CAGE.description": "If you automatically play at least {Cards} cards in a turn, draw {Energy:diff()} {Energy:plural:card|cards} and gain {Energy:energyIcons()} at the start of your next turn",
   "DELTAWARRIORS-AS_ONE_CAGE.title": "Together As One",
 
   "DELTAWARRIORS-OUTCAST_CAGE.description": "[gold]Block[/gold] {Block:diff()}.\nA random card in your hand costs {Energy:energyIcons()} [red]more[/red] this combat.",
@@ -175,7 +175,7 @@
   "DELTAWARRIORS-GATE_DASH_CAGE.description": "Deal {Damage:diff()} to ALL enemies.\nPlay a random card from your hand.",
   "DELTAWARRIORS-GATE_DASH_CAGE.title": "Gate Dash",
 
-  "DELTAWARRIORS-OPENED_FOUNTAIN_CAGE.description": "ALL cards {IfUpgraded:show:in ALL piles|in hand} cost {Energy:energyIcons()} less for the first play this turn",
+  "DELTAWARRIORS-OPENED_FOUNTAIN_CAGE.description": "ALL cards {IfUpgraded:show:|in [gold]Hand[/gold]} cost {Energy:energyIcons()} less for the first play this turn.",
   "DELTAWARRIORS-OPENED_FOUNTAIN_CAGE.title": "Opened Fountain",
 
   "DELTAWARRIORS-STASHED_AWAY_CAGE.description": "[gold]Retain[/gold] your hand this turn.",
@@ -187,7 +187,7 @@
   "DELTAWARRIORS-FORETHOUGHT_CAGE.description": "Select {IfUpgraded:show:any number of cards|a card} to place at the bottom of your draw pile. {IfUpgraded:show:They are|It is} free until played.",
   "DELTAWARRIORS-FORETHOUGHT_CAGE.title": "Forethought",
 
-  "DELTAWARRIORS-PIROUETTE_CAGE.description": "Every turn [red]increase[/red] the cost of a card in your draw pile and decrease the cost of a card in your discard by {Energy}.",
+  "DELTAWARRIORS-PIROUETTE_CAGE.description": "At the start of you turn,\nreduce the cost of a card in your [gold]Hand[/gold]\nand increase the cost of a card in your [gold]Draw Pile[/gold] by {Energy:energyIcons()}.",
   "DELTAWARRIORS-PIROUETTE_CAGE.title": "Pirouette",
 
   "DELTAWARRIORS-BACKTRACKING_CAGE.description": "At the start of your turn all enemies gain {BacktrackingPower:diff()} Otherworldly Corruption",
@@ -202,7 +202,7 @@
   "DELTAWARRIORS-PREPARATION_CAGE.description": "[gold]Automatically[/gold] play the next {PreparationPower:plural:power|{} powers} drawn that can be played this way.",
   "DELTAWARRIORS-PREPARATION_CAGE.title": "Preparation",
 
-  "DELTAWARRIORS-INTROSPECTION_CAGE.description": "At the start of your turn return the last played {IntrospectionPower:plural:card|{} cards} to your hand.",
+  "DELTAWARRIORS-INTROSPECTION_CAGE.description": "At the start of your turn, return the last card you played the previous turn to your [gold]Hand[/gold].",
   "DELTAWARRIORS-INTROSPECTION_CAGE.title": "Introspection",
 
   "DELTAWARRIORS-ATHLETICS_CAGE.description": "Gain {Block:diff()} [gold]Block[/gold] next turn.",
@@ -235,32 +235,32 @@
   "DELTAWARRIORS-HIDDEN_TALENT_CAGE.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold].\nMust be played [gold]Automatically[/gold]",
   "DELTAWARRIORS-HIDDEN_TALENT_CAGE.title": "Hidden Talent",
 
-  "DELTAWARRIORS-WHO_IS_THAT_CAGE.description": "Choose 1 of {Cards:diff()} from any character to add to your hand. It is free this combat.",
-  "DELTAWARRIORS-WHO_IS_THAT_CAGE.title": "Who Is That",
+  "DELTAWARRIORS-WHO_IS_THAT_CAGE.description": "Choose 1 of {Cards:diff()} from any character to add to your [gold]Hand[/gold].\nThat card is free this combat.",
+  "DELTAWARRIORS-WHO_IS_THAT_CAGE.title": "Who is that?",
   "DELTAWARRIORS-WHO_IS_THAT_CAGE.selectionScreenPrompt": "Select a card to add into your Hand.",
 
-  "DELTAWARRIORS-MISSING_HAND_CAGE.description": "Gain {StrengthPower} [gold]Strength[/gold].\nGain {DexterityPower} [gold]Dexterity[/gold].\nYou can only hold a maximum of {Cards} cards in hand.",
+  "DELTAWARRIORS-MISSING_HAND_CAGE.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold].\nGain {DexterityPower:diff()} [gold]Dexterity[/gold].\nYou can only hold a maximum of {Cards:diff()} cards in [gold]Hand[/gold].",
   "DELTAWARRIORS-MISSING_HAND_CAGE.title": "Missing Hand",
 
-  "DELTAWARRIORS-BANISH_CAGE.description": "Deal {Damage:diff()} Damage.\n[gold]Command[/gold] {dwTempCommand:diff()} this turn.\nApply {OtherworldlyCorruptionPower:diff()} [gold]Otherworldly Corruption[/gold].",
+  "DELTAWARRIORS-BANISH_CAGE.description": "Deal {Damage:diff()} damage.\n[gold]Command[/gold] {TempBanishPower:diff()} this turn.\n[gold]Diminish[/gold] {DiminishPower:diff()}.",
   "DELTAWARRIORS-BANISH_CAGE.title": "Banish",
 
-  "DELTAWARRIORS-SHRINE_CAGE.description": "At the start of your next {ShrinePower:plural:turn|{} turns} gain {Energy:energyIcons()}. Your character plays your next {ShrinePower:plural:turn|{} turns} for you.",
+  "DELTAWARRIORS-SHRINE_CAGE.description": "At the start of your next {ShrinePower:plural:turn|{} turns} gain {Energy:energyIcons()}.\nYour character plays the next {ShrinePower:plural:turn|{} turns} for you.",
   "DELTAWARRIORS-SHRINE_CAGE.title": "Shrine",
 
-  "DELTAWARRIORS-SHADOW_MANTLE_CAGE.description": "Whenever you shuffle your draw pile, move half of your statuses to your discard pile",
+  "DELTAWARRIORS-SHADOW_MANTLE_CAGE.description": "Whenever you shuffle your [gold]Draw Pile[/gold],\nmove half of your status cards and curses to your [gold]Discard Pile[/gold].",
   "DELTAWARRIORS-SHADOW_MANTLE_CAGE.title": "Shadow Mantle",
 
-  "DELTAWARRIORS-MYSTERIOUS_CALL_CAGE.description": "[gold]Command[/gold] {dwTempCommand:diff()} this turn.",
+  "DELTAWARRIORS-MYSTERIOUS_CALL_CAGE.description": "[gold]Command[/gold] {MysteriousCallPower:diff()} this turn.",
   "DELTAWARRIORS-MYSTERIOUS_CALL_CAGE.title": "Mysterious Call",
 
   "DELTAWARRIORS-MADDENING_CAGE.description": "Select a card in your [gold]Hand[/gold] to make free this combat.",
   "DELTAWARRIORS-MADDENING_CAGE.title": "Maddening",
   "DELTAWARRIORS-MADDENING_CAGE.selectionScreenPrompt": "Select a card to make free.",
 
-  "DELTAWARRIORS-SEAL_THE_FOUNTAIN_CAGE.description": "Gain [gold]Block[/gold] equal to the number of cards in your deck.{InCombat: Currently {CalculatedBlock:diff()}|}",
+  "DELTAWARRIORS-SEAL_THE_FOUNTAIN_CAGE.description": "Gain [gold]Block[/gold] equal to the number of cards in your deck.{InCombat:\nCurrently {CalculatedBlock:diff()} [gold]Block[/gold].|}",
   "DELTAWARRIORS-SEAL_THE_FOUNTAIN_CAGE.title": "Seal The Fountain",
 
-  "DELTAWARRIORS-ROOTS_CAGE.description": "The next card played [gold]Automatically[/gold] gets replay 1",
+  "DELTAWARRIORS-ROOTS_CAGE.description": "The next card automatically played gains [gold]Replay[/gold] {RootsPower:diff()}.",
   "DELTAWARRIORS-ROOTS_CAGE.title": "Roots"
 }

@@ -16,8 +16,12 @@ public class MissingHandCage() : CageCard(1,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(2), new PowerVar<DexterityPower>(2), 
-        new PowerVar<MissingHandPower>(1), new CardsVar(7)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new PowerVar<StrengthPower>(2), 
+        new PowerVar<DexterityPower>(2), 
+        new PowerVar<MissingHandPower>(1), 
+        new CardsVar(7)
+    ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
@@ -33,6 +37,7 @@ public class MissingHandCage() : CageCard(1,
         await CommonActions.ApplySelf<MissingHandPower>(choiceContext, this);
         await CommonActions.ApplySelf<StrengthPower>(choiceContext, this);
         await CommonActions.ApplySelf<DexterityPower>(choiceContext, this);
+        // Remove extra cards in hand to enforce new hand size
         await CardPileCmd.Add(CardPile.GetCards(Owner, PileType.Hand).Skip(DynamicVars.Cards.IntValue), PileType.Discard, CardPilePosition.Top);
     }
 

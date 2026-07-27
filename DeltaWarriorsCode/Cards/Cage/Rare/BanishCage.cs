@@ -17,17 +17,23 @@ public class BanishCage() : CageCard(0,
     CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new TempCommandVar(1).WithTooltip(), new DamageVar(5, ValueProp.Move),
-        new PowerVar<DiminishPower>(5)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new PowerVar<TempBanishPower>(1), 
+        new DamageVar(5, ValueProp.Move),
+        new PowerVar<DiminishPower>(5)
+    ];
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        [HoverTipFactory.FromPower<DiminishPower>(DynamicVars.Power<DiminishPower>().IntValue)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<CommandPower>(),
+        HoverTipFactory.FromPower<DiminishPower>(),
+        HoverTipFactory.Static(DeltaEnums.ToBalance)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.ApplySelf<TempBanishPower>(choiceContext, this, DynamicVars.TempCommandVar().BaseValue);
+        await CommonActions.ApplySelf<TempBanishPower>(choiceContext, this);
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         await CommonActions.Apply<DiminishPower>(choiceContext, this, play);
     }

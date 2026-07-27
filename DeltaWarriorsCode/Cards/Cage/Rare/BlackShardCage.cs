@@ -10,12 +10,17 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Cards.Cage.Rare;
 
-public class BlackShardCage() : CageCard(1,
+public class BlackShardCage() : CageCard(2,
     CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9, ValueProp.Move), new CardsVar(3)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(DeltaEnums.ToExpand)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DamageVar(13, ValueProp.Move), 
+        new CardsVar(3)
+    ];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.Static(DeltaEnums.ToExpand),
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

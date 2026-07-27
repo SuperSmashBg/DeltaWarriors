@@ -11,7 +11,10 @@ public class ShrineCage() : CageCard(1,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ShrinePower>(1), new EnergyVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new PowerVar<ShrinePower>(1), 
+        new EnergyVar(3)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

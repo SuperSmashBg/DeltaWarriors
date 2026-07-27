@@ -28,9 +28,4 @@ public class BunkerCodesCage() : CageCard(0,
         }
         return base.OnPlay(choiceContext, play);
     }
-
-    protected override void OnUpgrade()
-    {
-
-    }
 }

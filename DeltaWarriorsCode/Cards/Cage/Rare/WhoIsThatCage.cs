@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Rewards;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Cards.Cage.Rare;
 
-public class WhoIsThatCage() : CageCard(1,
+public class WhoIsThatCage() : CageCard(2,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {

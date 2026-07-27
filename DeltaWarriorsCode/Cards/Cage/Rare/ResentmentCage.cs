@@ -15,16 +15,19 @@ public class ResentmentCage() : CageCard(1,
     CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CalculationBaseVar(7), new ExtraDamageVar(3),
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new CalculationBaseVar(7), 
+        new ExtraDamageVar(3),
         new CalculatedDamageVar(ValueProp.Move)
-            .WithMultiplier((card, creature) => CombatManager.Instance.History.CardPlaysFinished
-                .Count(cf => cf.CardPlay.IsAutoPlay && card.Owner == cf.Actor.Player))];
+            .WithMultiplier((card, _) => CombatManager.Instance.History.CardPlaysFinished
+                .Count(cf => cf.CardPlay.IsAutoPlay && card.Owner == cf.Actor.Player))
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play.Target, DynamicVars.CalculatedDamage).Execute(choiceContext);
+        await CommonActions.CardAttack(this, play, play.Target, DynamicVars.CalculatedDamage, ValueProp.Move).Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

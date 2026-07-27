@@ -18,11 +18,14 @@ public class DarknessFormCage() : CageCard(3,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-        [new EnergyVar(1), new PowerVar<CommandPower>( 3)];
+        [new EnergyVar(1), new PowerVar<CommandPower>(3)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [DeltaKeywords.Manual];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<CommandPower>(DynamicVars.Power<CommandPower>().IntValue)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<CommandPower>(DynamicVars.Power<CommandPower>().IntValue),
+        HoverTipFactory.Static(StaticHoverTip.Energy)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

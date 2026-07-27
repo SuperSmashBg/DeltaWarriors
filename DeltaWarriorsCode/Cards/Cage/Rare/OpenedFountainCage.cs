@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace DeltaWarriors.DeltaWarriorsCode.Cards.Cage.Rare;
 
-public class OpenedFountainCage() : CageCard(4,
+public class OpenedFountainCage() : CageCard(2,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
