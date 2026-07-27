@@ -106,7 +106,7 @@
   "DELTAWARRIORS-TARGETED_CAGE.description": "[gold]Block[/gold] {Block:diff()}.\nNext turn, draw {DrawLessNextTurn:diff()} fewer cards.",
   "DELTAWARRIORS-TARGETED_CAGE.title": "Targeted",
 
-  "DELTAWARRIORS-STORAGE_CAGE.description": "Cards drawn due to automatically played cards [Gold]Retain[/gold] for a turn.",
+  "DELTAWARRIORS-STORAGE_CAGE.description": "Cards drawn due to automatically played cards [gold]Retain[/gold] for a turn.",
   "DELTAWARRIORS-STORAGE_CAGE.title": "Storage",
   
   "DELTAWARRIORS-X_SLASH_CAGE.description": "Deal {Damage:diff()} damage twice.",
@@ -133,7 +133,7 @@
   "DELTAWARRIORS-DELIBERATE_MISINTERPRETATION_CAGE.description": "[gold]Scry[/gold] {dwScry:diff()}.\nDiscarded cards cost {Energy:energyIcons()} less this combat.",
   "DELTAWARRIORS-DELIBERATE_MISINTERPRETATION_CAGE.title": "\"Misinterpretation\"",
   
-  "DELTAWARRIORS-CORRUPTING_STRIKE_CAGE.description": "Deal {Damage:diff()} Damage. Apply {OtherworldlyCorruptionPower:diff()} [gold]Otherworldly Corruption[/gold]",
+  "DELTAWARRIORS-CORRUPTING_STRIKE_CAGE.description": "Deal {Damage:diff()} Damage. Apply {DiminishPower:diff()} [gold]Otherworldly Corruption[/gold]",
   "DELTAWARRIORS-CORRUPTING_STRIKE_CAGE.title": "Corrupting Strike",
 
   "DELTAWARRIORS-EGG_CAGE.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.\nGain {Energy:energyIcons()}.",
@@ -235,7 +235,7 @@
   "DELTAWARRIORS-HIDDEN_TALENT_CAGE.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold].\nMust be played [gold]Automatically[/gold]",
   "DELTAWARRIORS-HIDDEN_TALENT_CAGE.title": "Hidden Talent",
 
-  "DELTAWARRIORS-WHO_IS_THAT_CAGE.description": "Choose 1 of {Cards:diff()} from any character to add to your [gold]Hand[/gold].\nThat card is free this combat.",
+  "DELTAWARRIORS-WHO_IS_THAT_CAGE.description": "Choose 1 of {Cards:diff()} cards from any character to add to your [gold]Hand[/gold].\nThat card is free this combat.",
   "DELTAWARRIORS-WHO_IS_THAT_CAGE.title": "Who is that?",
   "DELTAWARRIORS-WHO_IS_THAT_CAGE.selectionScreenPrompt": "Select a card to add into your Hand.",
 
